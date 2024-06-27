@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh" class="h-100">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petitude | 論壇</title>
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- slick輪播 cdn -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* slick css 這裡開始 */
+    .slider {
+      width: 100%;
+      margin: 100px auto;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out 0.3s;
+      opacity: 0.2;
+    }
+
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    /* slick css 這裡結束 */
+
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    body {
+      background-image: url(./pet_img/bg-img.png);
+    }
+
+    .rounded-5 {
+      border-radius: 15px;
+    }
+
+    .w-10 {
+      width: 245px;
+    }
+
+    .w-80 {
+      width: 80%;
+    }
+
+    .w-95 {
+      width: 95%;
+    }
+
+    .border-coffee {
+      border: 1px solid #6a513d;
+    }
+
+    .news-block-img1 {
+      height: 721px;
+      border: 1px solid black;
+    }
+
+    .news-block-img2 {
+      height: 240px;
+      border: 1px solid black;
+    }
+
+    /* .class-content {
+        border: 1px solid black;
+      } */
+
+    .btn-hover:hover {
+      background-color: #f6d554;
+      border: 1px solid #f6d554;
+    }
+
+    .go-top-btn {
+      text-decoration: none;
+      color: #f69a30;
+    }
+
+    .go-top-btn:hover {
+      color: #f6d554;
+    }
+
+    .noBorderRadiusEnd {
+      border-end-end-radius: unset;
+      border-top-right-radius: unset;
+    }
+
+    .noBorderRadiusStat {
+      border-start-start-radius: unset;
+      border-bottom-left-radius: unset;
+    }
+
+    .my-active {
+      color: #f6d554 !important;
+      border-bottom: 3px solid #f6d554;
+    }
+
+    .nuderline {
+      border-bottom: 1px solid #c8c8c8;
+    }
+
+    .display-change {
+      display: none;
+    }
+
+    .display-change.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="h-100">
+  <!-- nav 這裡開始 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav 這裡結束 -->
+
+  <div class="container">
+    <div class="row">
+      <!-- side-bar 這裡開始 -->
+      <div class="col-xl-3 d-lg-none d-xl-block d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block my-4">
+        <div class="bg-white w-10 rounded-5 h-75 px-3 pt-4 position-fixed d-flex flex-column justify-content-between">
+          <div class="d-flex flex-column">
+            <form class="d-flex mb-5">
+              <input class="noBorderRadiusEnd form-control border-success border-end-0" type="search"
+                placeholder="Search" aria-label="Search" />
+              <button class="noBorderRadiusStat btn btn-outline-success border-start-0" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+
+            <button type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              主題分類
+            </button>
+            <button type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              熱門討論
+            </button>
+            <button type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              最新文章
+            </button>
+            <button type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              文章收藏
+            </button>
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="go-top-btn mb-2" href="#">Go Top <i class="bi bi-triangle-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- side-bar 這裡結束 -->
+
+      <!-- section 這裡開始 -->
+      <div class="col-xl-9 col-lg-12">
+        <!-- news-block 這裡開始 -->
+        <div class="container mt-3 mb-5">
+          <div class="row">
+            <div class="p-0 col-md-7 news-block-img1"></div>
+            <div class="p-0 col-md-5">
+              <div class="news-block-img2"></div>
+              <div class="news-block-img2"></div>
+              <div class="news-block-img2"></div>
+            </div>
+          </div>
+        </div>
+        <!-- news-block 這裡結束 -->
+
+        <!-- lost-block 這裡開始 -->
+        <div class="container my-5">
+          <div class="row">
+            <div class="col">
+              <section class="variable">
+                <div>
+                  <a href="#"><img src="./pet_img/lost-img1.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="./pet_img/lost-img2.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="./pet_img/lost-img3.png" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="./pet_img/lost-img2.png" /></a>
+                </div>
+              </section>
+              <div class="d-flex flex-column align-items-end me-4">
+                <a style="color: black" href=""><i style="color: #f6d554" class="bi bi-plus-circle-fill"></i>
+                  View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- lost-block 這裡結束 -->
+
+        <!-- class-block 這裡開始 -->
+        <div class="card text-center my-5 rounded-5 border-5 border-coffee">
+          <div class="mx-5 mt-4">
+            <nav class="nav border-bottom">
+              <a class="nav-change nav-link my-active text-black" href="#" data-target="#tab1">寵物遺失</a>
+
+              <a class="nav-change nav-link text-black" href="#" data-target="#tab2">飼養心得</a>
+
+              <a class="nav-change nav-link text-black" href="#" data-target="#tab3">聊天討論</a>
+            </nav>
+          </div>
+          <div class="mt-2 mb-4 mx-2">
+            <div id="tab1" class="content-change display-change tab-content active">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col-lg-5 d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block class-content px-0 pt-5 ">
+                    <img class="img-fluid" id="main-img1" class="dis-block" src="./pet_img/p01.png" alt="p01" />
+                  </div>
+                  <div class="col-lg-7 col-md-12 d-flex  flex-column align-items-center justify-content-center">
+                    <div class="nuderline w-95 ">
+                      <a class="ms-1" href="#" data-img="p01">
+                        <p>我的狗狗不見了，有人見過嗎？</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p02">
+                        <p>貓咪走失，懇請大家幫忙找尋</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p03">
+                        <p>小兔子不見了，急尋！</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p04">
+                        <p>小鳥飛走了，懇請幫忙找尋</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p05">
+                        <p>三花虎斑貓走失</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab2" class="content-change display-change tab-content">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col-lg-5 d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block class-content px-0 pt-5 ">
+                    <img class="img-fluid" id="main-img2" class="dis-block" src="./pet_img/p01.png" alt="p01" />
+                  </div>
+                  <div class="col-lg-7 col-md-12 d-flex  flex-column align-items-center justify-content-center">
+                    <div class="nuderline w-95 ">
+                      <a class="ms-1" href="#" data-img="p01">
+                        <p>飼養貓咪的那些事</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p02">
+                        <p>飼養狗狗的快樂與挑戰</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p03">
+                        <p>初次飼養兔子的經驗分享</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p04">
+                        <p>養倉鼠的甜蜜時光</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p05">
+                        <p>分辨優良貓舍的初步鋩角</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="tab3" class="content-change display-change tab-content">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col-lg-5 d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block class-content px-0 pt-5 ">
+                    <img class="img-fluid" id="main-img3" class="dis-block" src="./pet_img/p01.png" alt="p01" />
+                  </div>
+                  <div class="col-lg-7 col-md-12 d-flex  flex-column align-items-center justify-content-center">
+                    <div class="nuderline w-95 ">
+                      <a class="ms-1" href="#" data-img="p01">
+                        <p>大家都在養什麼寵物？</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p02">
+                        <p>如何選擇適合自己的寵物？</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p03">
+                        <p>養狗新手第一次去寵物展</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p04">
+                        <p>飼養多種寵物的經驗分享</p>
+                      </a>
+                    </div>
+
+                    <div class="nuderline w-95">
+                      <a class="ms-1" href="#" data-img="p05">
+                        <p>寵物行為問題討論</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column align-items-end mt-4 me-5 mb-2">
+              <a style="color: black" href=""><i style="color: #f6d554" class="bi bi-plus-circle-fill"></i>
+                View more</a>
+            </div>
+          </div>
+        </div>
+        <!-- class-block 這裡結束 -->
+      </div>
+      <!-- section 這裡結束 -->
+    </div>
+  </div>
+
+  <!-- footer 這裡開始 -->
+  <footer style="background-color: #f4bc7a" class="footer mt-auto py-3 text-center text-black fw-bold">
+    @ CopyRight 2024 Petitude
+  </footer>
+  <!-- footer 這裡結束 -->
+
+  <!-- slick輪播js -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).on("ready", function () {
+      $(".variable").slick({
+        arrows: false,
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: false,
+              infinite: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: false,
+              infinite: true,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: false,
+              infinite: true,
+            },
+          },
+        ],
+      });
+    });
+  </script>
+
+  <!-- class-block nav切換js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll(".nav-change");
+      const contents = document.querySelectorAll(".content-change");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          tabs.forEach((item) => item.classList.remove("my-active"));
+
+          tab.classList.add("my-active");
+
+          contents.forEach((content) => content.classList.remove("active"));
+
+          const target = document.querySelector(
+            tab.getAttribute("data-target")
+          );
+          target.classList.add("active");
+        });
+      });
+    });
+  </script>
+
+  <!-- class-block hover切換圖片js -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab, index) => {
+        const links = tab.querySelectorAll(".nuderline a");
+        const mainImg = tab.querySelector(`#main-img${index + 1}`);
+
+        links.forEach((link) => {
+          link.addEventListener("mouseover", function () {
+            const imgName = this.getAttribute("data-img");
+            showImage(imgName, mainImg);
+          });
+        });
+      });
+
+      function showImage(imageName, mainImg) {
+        mainImg.src = "./pet_img/" + imageName + ".png";
+      }
+    });
+  </script>
+</body>
+
+</html>
