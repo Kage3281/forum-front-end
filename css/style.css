@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../pet_img/bg-img.png);
+}
+
+/* slick css 這裡開始 */
+.slider {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out 0.3s;
+    opacity: 0.2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+/* slick css 這裡結束 */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rounded-5 {
+    border-radius: 15px;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.w-10 {
+    width: 245px;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+
+.w-80 {
+    width: 80%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.border-coffee {
+    border: 1px solid #6a513d;
+}
+
+.news-block-img1 {
+    /* height: 555px; */
+    /* border: 1px solid black; */
+}
+
+.news-block-img2 {
+    height: 185px;
+    /* border: 1px solid black; */
+}
+
+.btn-hover:hover {
+    background-color: #f6d554;
+    border: 1px solid #f6d554;
+}
+
+.go-top-btn {
+    text-decoration: none;
+    color: #f69a30;
+}
+
+.go-top-btn:hover {
+    color: #f6d554;
+}
+
+.noBorderRadiusEnd {
+    border-end-end-radius: unset;
+    border-top-right-radius: unset;
+}
+
+.noBorderRadiusStat {
+    border-start-start-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+.my-active {
+    color: #f6d554 !important;
+    border-bottom: 3px solid #f6d554;
+}
+
+.nuderline {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.display-change {
+    display: none;
+}
+
+.display-change.active {
+    display: block;
+}
