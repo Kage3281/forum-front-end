@@ -7,6 +7,24 @@ body {
     background-image: url(../pet_img/bg-img.png);
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+.fav-hover:hover {
+    color: #4CB1C8;
+}
+
+.del-hover:hover {
+    color: red;
+}
+
 /* slick css 這裡開始 */
 .slider {
     width: 100%;
@@ -37,10 +55,6 @@ body {
 
 /* slick css 這裡結束 */
 
-a {
-    text-decoration: none;
-    color: #000;
-}
 
 .rounded-5 {
     border-radius: 15px;
@@ -67,26 +81,28 @@ a {
     width: 95%;
 }
 
+.skin {
+    color: #F4BC7A;
+}
+
+.primary-yellow {
+    color: #F6D554;
+}
+
+.orange-yellow {
+    color: #F69A30;
+}
+
 .light-gray {
     color: #C8C8C8;
 }
 
 .hover:hover {
-    color: #F4BC7A !important;
+    color: #F4BC7A;
 }
 
 .border-coffee {
     border: 1px solid #6a513d;
-}
-
-.news-block-img1 {
-    /* height: 555px; */
-    /* border: 1px solid black; */
-}
-
-.news-block-img2 {
-    height: 185px;
-    /* border: 1px solid black; */
 }
 
 .btn-hover:hover {
