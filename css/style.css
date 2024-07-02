@@ -67,6 +67,14 @@ a {
     width: 95%;
 }
 
+.light-gray {
+    color: #C8C8C8;
+}
+
+.hover:hover {
+    color: #F4BC7A !important;
+}
+
 .border-coffee {
     border: 1px solid #6a513d;
 }
