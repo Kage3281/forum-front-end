@@ -82,6 +82,10 @@ a:hover {
     width: 95%;
 }
 
+.blue{
+    color: #4CB1C8;
+}
+
 .skin {
     color: #F4BC7A;
 }
@@ -103,7 +107,16 @@ a:hover {
 }
 
 .border-coffee {
-    border: 1px solid #6a513d;
+    border-color: #6a513d;
+}
+
+::placeholder {
+    color: #4CB1C8;
+    padding-left: 5%;    
+  }
+
+.border-blue {
+    border-color:#4CB1C8 ;
 }
 
 .btn-hover:hover {
@@ -135,9 +148,9 @@ a:hover {
     border-bottom: 3px solid #f6d554;
 }
 
-.nuderline {
+/* .nuderline {
     border-bottom: 1px solid #c8c8c8;
-}
+} */
 
 .display-change {
     display: none;
