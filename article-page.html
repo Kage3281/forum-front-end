@@ -1,397 +1,320 @@
 <!DOCTYPE html>
 <html lang="zh" class="h-100">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Petitude | 論壇</title>
-    <!-- bootstrap cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- 自訂style -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body class="d-flex flex-column h-100">
-    <!-- 電腦版 nav 這裡開始 -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block"
-    >
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse">
-          <div class="d-flex justify-content-center w-100">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img src="./pet_img/about-icon.png" alt=""
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img src="./pet_img/product-icon.png" alt=""
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img src="./pet_img/insurance-icon.png" alt=""
-                /></a>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petitude | 論壇</title>
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- 自訂style -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img src="./pet_img/petitude-icon.png" alt=""
-                /></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img src="./pet_img/funeral-icon.png" alt=""
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html"
-                  ><img src="./pet_img/forum-icon.png" alt=""
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><img src="./pet_img/member-icon.png" alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- 電腦版 nav 這裡結束 -->
-
-    <!-- 手機版 nav 這裡開始 -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none p-0"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand mx-auto" href="#"
-          ><img src="./pet_img/petitude-mobile-icon.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler p-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
+<body class="d-flex flex-column h-100">
+  <!-- 電腦版 nav 這裡開始 -->
+  <nav class="navbar navbar-expand-lg navbar-light d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse">
+        <div class="d-flex justify-content-center w-100">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">關於我們</a>
+              <a class="nav-link" href="#"><img src="./pet_img/about-icon.png" alt="" /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">購物商城</a>
+              <a class="nav-link" href="#"><img src="./pet_img/product-icon.png" alt="" /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">寵物保險</a>
+              <a class="nav-link" href="#"><img src="./pet_img/insurance-icon.png" alt="" /></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="./pet_img/petitude-icon.png" alt="" /></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="./pet_img/funeral-icon.png" alt="" /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">生命禮儀</a>
+              <a class="nav-link" href="./index.html"><img src="./pet_img/forum-icon.png" alt="" /></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">貓狗論壇</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">會員中心</a>
+              <a class="nav-link" href="#"><img src="./pet_img/member-icon.png" alt="" /></a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- 手機版 nav 這裡結束 -->
+    </div>
+  </nav>
+  <!-- 電腦版 nav 這裡結束 -->
 
-    <div class="container mb-5">
-      <div class="row">
-        <!-- side-bar 這裡開始 -->
-        <div
-          class="col-xl-3 d-lg-none d-xl-block d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block mb-0"
-        >
-          <div
-            class="bg-white w-10 rounded-5 h-70 px-3 pt-4 position-fixed d-flex flex-column justify-content-between"
-          >
-            <div class="d-flex flex-column">
-              <form class="d-flex mb-5">
-                <input
-                  class="noBorderRadiusEnd form-control border-success border-end-0"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button
-                  class="noBorderRadiusStat btn btn-outline-success border-start-0"
-                  type="submit"
-                >
-                  <i class="bi bi-search"></i>
-                </button>
-              </form>
-
-              <a
-                href="./class-list.html"
-                type="button"
-                class="border-coffee btn-hover btn btn-outline-dark mb-2"
-              >
-                主題分類
-              </a>
-              <a
-                href=""
-                type="button"
-                class="border-coffee btn-hover btn btn-outline-dark mb-2"
-              >
-                熱門討論
-              </a>
-              <a
-                href="./article-list.html"
-                type="button"
-                class="border-coffee btn-hover btn btn-outline-dark mb-2"
-              >
-                最新文章
-              </a>
-              <a
-                href="./favorite-article.html"
-                type="button"
-                class="border-coffee btn-hover btn btn-outline-dark mb-2"
-              >
-                文章收藏
-              </a>
-            </div>
-            <div class="d-flex justify-content-center mt-3">
-              <a class="go-top-btn mb-2" href="#"
-                >Go Top <i class="bi bi-triangle-fill"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- side-bar 這裡結束 -->
-
-        <!-- section 這裡開始 -->
-        <div class="col-xl-9 col-lg-12">
-          <!-- article-page 這裡開始 -->
-          <div class="container card my-2 rounded-5 border-0 h-100">
-            <div class="row">
-              <div
-                class="col-lg-12 col-md-12 d-flex flex-column justify-content-center mt-5"
-              >
-                <!-- article-content 這裡開始 -->
-                <section>
-                  <!-- head -->
-                  <div class="border-bottom border-secondary mx-2">
-                    <h2>文章名稱</h2>
-                    <div class="d-flex me-3">
-                      <div class="m-2 d-flex flex-grow-1 word-wrap">
-                        <a href="">
-                          <p
-                            class="border border-dark rounded-3 me-2 word-wrap"
-                          >
-                            主題名稱
-                          </p>
-                        </a>
-                        <p class="me-1 word-wrap">2024-05-29 12:27</p>
-                      </div>
-                      <a class="light-gray"
-                        ><i class="bi bi-pencil-fill"></i>編輯</a
-                      >
-                    </div>
-                  </div>
-
-                  <!-- main -->
-                  <div class="mx-3 my-4">
-                    <p>
-                      首先說我一向支持領養代替購買，自己的貓也是領養來的。但我理解有人就是喜歡品種貓，否則寵物版也不會幾乎每天都有人問貓舍評價了。
-                      這篇文是我整理了很多貓舍的經驗文與朋友經驗下濃縮的貓舍初步判斷標準。這個標準不是單純的「合法」而更傾向重視動物福利的道德層面。
-                      一些常見細節不會特別打出來，但如果有疑問我還是會回覆接解釋，也歡迎各位補充。
-                    </p>
-                    <p>
-                      * 當你瀏覽貓舍網站時，以下只要任一符合就危險
-                      1.沒有繁殖業與買賣業特寵字號、貓舍主人與營業登記人不是同一位
-                      2.貓舍繁殖超過2種品種 3.一隻種貓兩年生超過三胎
-                      4.沒有貓咪生活環境的照片或影片，都是可愛的擺拍照
-                      5.每胎出生的數量異常（每次都超過七、八隻等）
-                      6.父母的花紋和孩子的花紋對不上
-                      7.大量的現貨貓甚至特定花色（正常貓舍都是要預約的）
-                      8.種公種母超過七歲 9.沒有明確的繁殖計畫或是基因篩檢的證明
-                    </p>
-                    <p>
-                      溝通時有下列任一情況就建議換家 1.沒有綠單or綠單要加錢
-                      2.貓舍主人對於照顧貓的說明不清楚（例如怎麼保養毛髮、餵食等）
-                      3.貓舍主人沒有問你任何問題就同意賣貓（品種貓超嬌貴的，正常的培育者會對自己的貓充滿愛與驕傲，他們也會挑主人的）
-                      4.暗示可以不結紮、不打晶片、讓你帶小貓走
-                      5.沒辦法拿出種公種母的晶片號碼（這是法律上有義務提供的，請堅定的提出要求）
-                      6.沒有種公種母的退休計畫 7.貓咪沒出生就付訂
-                      8.金額異常低廉卻要求後續購買該貓舍自產飼料鮮食
-                    </p>
-                    <p>
-                      到現場需要觀察以下情況，有的話收手為上
-                      1.讓你隨便抱小貓（小貓超容易生病，正常人不會讓外人隨便接觸）
-                      2.沒有任何居家防護措施
-                      3.貓咪眼睛、耳朵、皮膚有任何的髒污或異常
-                      4.長毛貓貓舍沒有空調都是NG 5.只談價錢不談貓咪照顧
-                      6.不用預約直接去的店都不是正常的
-                    </p>
-                    <p>
-                      領貓必備 1.前一天或當天的健檢報告
-                      2.血統書（最好能請貓舍直接讓協會把綠單寄給你，現在都是email了）
-                      3.晶片資料 4.打完兩劑疫苗才能帶
-                      5.是否有遺傳病的合約（這點見仁見智，但我建議確認一下至少有一年的保證期）
-                    </p>
-                    <p>
-                      *
-                      我絕對不鼓勵購買寵物，但再怎麼樣希望無良貓舍可以逐步消失。如果真的要買貓，也請做足功課挑選重視動物福利的優良貓舍。
-                      我相信譴責可能無法遏止買賣的發生，但推廣知識可能有機會帶來環境的轉變。
-                      最後給大家看看我家成貓領養的米克斯孩子，真的好可愛。
-                    </p>
-                  </div>
-
-                  <!-- foot -->
-                  <div
-                    class="border-bottom border-secondary d-flex justify-content-around pb-3"
-                  >
-                    <a class="light-gray fav-hover"
-                      ><i class="bi bi-bookmark-fill"></i>收藏</a
-                    >
-                    <a class="light-gray"
-                      ><i class="bi bi-share-fill"></i>分享</a
-                    >
-                  </div>
-                </section>
-                <!-- article-content 這裡結束 -->
-
-                <!-- message-content 這裡開始 -->
-                <section>
-                  <div class="d-flex border-bottom my-4">
-                    <div class="mx-2">
-                      <img src="./pet_img/avatar.png" alt="" />
-                    </div>
-                    <div class="flex-grow-1 me-2">
-                      <p>使用者1</p>
-                      <p>
-                        留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
-                      </p>
-                      <div class="d-flex ms-4">
-                        <p class="me-4">2024-06-03 12:00</p>
-                        <a href="">回覆</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-flex border-bottom my-4">
-                    <div class="mx-2">
-                      <img src="./pet_img/avatar.png" alt="" />
-                    </div>
-                    <div class="flex-grow-1 me-2">
-                      <p>使用者1</p>
-                      <p>
-                        留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
-                      </p>
-                      <div class="d-flex ms-4">
-                        <p class="me-4">2024-06-03 12:00</p>
-                        <a href="">回覆</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-flex border-bottom my-4">
-                    <div class="mx-2">
-                      <img src="./pet_img/avatar.png" alt="" />
-                    </div>
-                    <div class="flex-grow-1 me-2">
-                      <p>使用者1</p>
-                      <p>
-                        留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
-                      </p>
-                      <div class="d-flex ms-4">
-                        <p class="me-4">2024-06-03 12:00</p>
-                        <a href="">回覆</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-flex border-bottom my-4">
-                    <div class="mx-2">
-                      <img src="./pet_img/avatar.png" alt="" />
-                    </div>
-                    <div class="flex-grow-1 me-2">
-                      <p>使用者1</p>
-                      <p>
-                        留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
-                      </p>
-                      <div class="d-flex ms-4">
-                        <p class="me-4">2024-06-03 12:00</p>
-                        <a href="">回覆</a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="d-flex border-bottom my-4">
-                    <div class="mx-2">
-                      <img src="./pet_img/avatar.png" alt="" />
-                    </div>
-                    <div class="flex-grow-1 me-2">
-                      <p>使用者1</p>
-                      <p>
-                        留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
-                      </p>
-                      <div class="d-flex ms-4">
-                        <p class="me-4">2024-06-03 12:00</p>
-                        <a href="">回覆</a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <!-- message-content 這裡結束 -->
-
-                <!-- re-message-block 這裡開始 -->
-                <div class="position-sticky bottom-0">
-                  <input
-                    style="height: 45px"
-                    class="card w-100 border-3 border-blue"
-                    type="text"
-                    placeholder="回覆......"
-                  />
-                </div>
-                <!-- re-message-block 這裡結束 -->
-              </div>
-            </div>
-          </div>
-          <!-- article-page 這裡結束 -->
-        </div>
-        <!-- section 這裡結束 -->
+  <!-- 手機版 nav 這裡開始 -->
+  <nav class="navbar navbar-expand-lg navbar-light d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none p-0">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-auto" href="#"><img src="./pet_img/petitude-mobile-icon.png" alt="" /></a>
+      <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">購物商城</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">寵物保險</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">生命禮儀</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">貓狗論壇</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">會員中心</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+  <!-- 手機版 nav 這裡結束 -->
 
-    <!-- footer 這裡開始 -->
-    <footer
-      style="background-color: #f4bc7a"
-      class="footer mt-auto py-3 text-center text-black fw-bold"
-    >
-      @ CopyRight 2024 Petitude
-    </footer>
-    <!-- footer 這裡結束 -->
+  <div class="container mb-5">
+    <div class="row">
+      <!-- side-bar 這裡開始 -->
+      <div class="col-xl-3 d-lg-none d-xl-block d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block mb-0">
+        <div class="bg-white w-10 rounded-5 h-70 px-3 pt-4 position-fixed d-flex flex-column justify-content-between">
+          <div class="d-flex flex-column">
+            <form class="d-flex mb-5">
+              <input class="noBorderRadiusEnd form-control border-success border-end-0" type="search"
+                placeholder="Search" aria-label="Search" />
+              <button class="noBorderRadiusStat btn btn-outline-success border-start-0" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
 
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+            <a href="./class-list.html" type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              主題分類
+            </a>
+            <a href="" type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              熱門討論
+            </a>
+            <a href="./article-list.html" type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              最新文章
+            </a>
+            <a href="./favorite-article.html" type="button" class="border-coffee btn-hover btn btn-outline-dark mb-2">
+              文章收藏
+            </a>
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <a class="go-top-btn mb-2" href="#">Go Top <i class="bi bi-triangle-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- side-bar 這裡結束 -->
+
+      <!-- section 這裡開始 -->
+      <div class="col-xl-9 col-lg-12">
+        <!-- article-page 這裡開始 -->
+        <div class="container card my-2 rounded-5 border-0 h-100">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 d-flex flex-column justify-content-center mt-4">
+
+              <!-- monile only go-back-page-btn -->
+              <div style="width: 30px; height: 30px; top: 142px; left: 12px;"
+                class="border rounded bg-white d-flex justify-content-center align-items-center position-fixed d-xl-none d-xxl-block d-xxl-none">
+                <a href="./article-list.html"><i class="bi bi-chevron-left"></i></a>
+              </div>
+
+              <!-- article-content 這裡開始 -->
+              <section>
+                <!-- head -->
+                <div class="border-bottom border-secondary mt-3 mx-2">
+                  <h2>文章名稱</h2>
+                  <div class="d-flex me-3">
+                    <div class="m-2 d-flex flex-grow-1 word-wrap">
+                      <a href="">
+                        <p class="border border-dark rounded-3 me-2 word-wrap">
+                          主題名稱
+                        </p>
+                      </a>
+                      <p class="me-1 word-wrap">2024-05-29 12:27</p>
+                    </div>
+                    <a class="light-gray"><i class="bi bi-pencil-fill"></i>編輯</a>
+                  </div>
+                </div>
+
+                <!-- main -->
+                <div class="mx-3 my-4">
+                  <p>
+                    首先說我一向支持領養代替購買，自己的貓也是領養來的。但我理解有人就是喜歡品種貓，否則寵物版也不會幾乎每天都有人問貓舍評價了。
+                    這篇文是我整理了很多貓舍的經驗文與朋友經驗下濃縮的貓舍初步判斷標準。這個標準不是單純的「合法」而更傾向重視動物福利的道德層面。
+                    一些常見細節不會特別打出來，但如果有疑問我還是會回覆接解釋，也歡迎各位補充。
+                  </p>
+                  <p>
+                    * 當你瀏覽貓舍網站時，以下只要任一符合就危險
+                    1.沒有繁殖業與買賣業特寵字號、貓舍主人與營業登記人不是同一位
+                    2.貓舍繁殖超過2種品種 3.一隻種貓兩年生超過三胎
+                    4.沒有貓咪生活環境的照片或影片，都是可愛的擺拍照
+                    5.每胎出生的數量異常（每次都超過七、八隻等）
+                    6.父母的花紋和孩子的花紋對不上
+                    7.大量的現貨貓甚至特定花色（正常貓舍都是要預約的）
+                    8.種公種母超過七歲 9.沒有明確的繁殖計畫或是基因篩檢的證明
+                  </p>
+                  <p>
+                    溝通時有下列任一情況就建議換家 1.沒有綠單or綠單要加錢
+                    2.貓舍主人對於照顧貓的說明不清楚（例如怎麼保養毛髮、餵食等）
+                    3.貓舍主人沒有問你任何問題就同意賣貓（品種貓超嬌貴的，正常的培育者會對自己的貓充滿愛與驕傲，他們也會挑主人的）
+                    4.暗示可以不結紮、不打晶片、讓你帶小貓走
+                    5.沒辦法拿出種公種母的晶片號碼（這是法律上有義務提供的，請堅定的提出要求）
+                    6.沒有種公種母的退休計畫 7.貓咪沒出生就付訂
+                    8.金額異常低廉卻要求後續購買該貓舍自產飼料鮮食
+                  </p>
+                  <p>
+                    到現場需要觀察以下情況，有的話收手為上
+                    1.讓你隨便抱小貓（小貓超容易生病，正常人不會讓外人隨便接觸）
+                    2.沒有任何居家防護措施
+                    3.貓咪眼睛、耳朵、皮膚有任何的髒污或異常
+                    4.長毛貓貓舍沒有空調都是NG 5.只談價錢不談貓咪照顧
+                    6.不用預約直接去的店都不是正常的
+                  </p>
+                  <p>
+                    領貓必備 1.前一天或當天的健檢報告
+                    2.血統書（最好能請貓舍直接讓協會把綠單寄給你，現在都是email了）
+                    3.晶片資料 4.打完兩劑疫苗才能帶
+                    5.是否有遺傳病的合約（這點見仁見智，但我建議確認一下至少有一年的保證期）
+                  </p>
+                  <p>
+                    *
+                    我絕對不鼓勵購買寵物，但再怎麼樣希望無良貓舍可以逐步消失。如果真的要買貓，也請做足功課挑選重視動物福利的優良貓舍。
+                    我相信譴責可能無法遏止買賣的發生，但推廣知識可能有機會帶來環境的轉變。
+                    最後給大家看看我家成貓領養的米克斯孩子，真的好可愛。
+                  </p>
+                </div>
+
+                <!-- foot -->
+                <div class="border-bottom border-secondary d-flex justify-content-around pb-3">
+                  <a class="light-gray fav-hover"><i class="bi bi-bookmark-fill"></i>收藏</a>
+                  <a class="light-gray"><i class="bi bi-share-fill"></i>分享</a>
+                </div>
+              </section>
+              <!-- article-content 這裡結束 -->
+
+              <!-- message-content 這裡開始 -->
+              <section>
+                <div class="d-flex border-bottom my-4">
+                  <div class="mx-2">
+                    <img src="./pet_img/avatar.png" alt="" />
+                  </div>
+                  <div class="flex-grow-1 me-2">
+                    <p>使用者1</p>
+                    <p>
+                      留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
+                    </p>
+                    <div class="d-flex ms-4">
+                      <p class="me-4">2024-06-03 12:00</p>
+                      <a href="">回覆</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex border-bottom my-4">
+                  <div class="mx-2">
+                    <img src="./pet_img/avatar.png" alt="" />
+                  </div>
+                  <div class="flex-grow-1 me-2">
+                    <p>使用者1</p>
+                    <p>
+                      留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
+                    </p>
+                    <div class="d-flex ms-4">
+                      <p class="me-4">2024-06-03 12:00</p>
+                      <a href="">回覆</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex border-bottom my-4">
+                  <div class="mx-2">
+                    <img src="./pet_img/avatar.png" alt="" />
+                  </div>
+                  <div class="flex-grow-1 me-2">
+                    <p>使用者1</p>
+                    <p>
+                      留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
+                    </p>
+                    <div class="d-flex ms-4">
+                      <p class="me-4">2024-06-03 12:00</p>
+                      <a href="">回覆</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex border-bottom my-4">
+                  <div class="mx-2">
+                    <img src="./pet_img/avatar.png" alt="" />
+                  </div>
+                  <div class="flex-grow-1 me-2">
+                    <p>使用者1</p>
+                    <p>
+                      留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
+                    </p>
+                    <div class="d-flex ms-4">
+                      <p class="me-4">2024-06-03 12:00</p>
+                      <a href="">回覆</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex border-bottom my-4">
+                  <div class="mx-2">
+                    <img src="./pet_img/avatar.png" alt="" />
+                  </div>
+                  <div class="flex-grow-1 me-2">
+                    <p>使用者1</p>
+                    <p>
+                      留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容留言內容
+                    </p>
+                    <div class="d-flex ms-4">
+                      <p class="me-4">2024-06-03 12:00</p>
+                      <a href="">回覆</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- message-content 這裡結束 -->
+
+              <!-- re-message-block 這裡開始 -->
+              <div class="position-sticky bottom-0">
+                <input style="height: 45px" class="card w-100 border-3 border-blue" type="text"
+                  placeholder="回覆......" />
+              </div>
+              <!-- re-message-block 這裡結束 -->
+            </div>
+          </div>
+        </div>
+        <!-- article-page 這裡結束 -->
+      </div>
+      <!-- section 這裡結束 -->
+    </div>
+  </div>
+
+  <!-- footer 這裡開始 -->
+  <footer style="background-color: #f4bc7a" class="footer mt-auto py-3 text-center text-black fw-bold">
+    @ CopyRight 2024 Petitude
+  </footer>
+  <!-- footer 這裡結束 -->
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

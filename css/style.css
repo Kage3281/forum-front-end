@@ -13,7 +13,7 @@ a {
     /* display: block; */
 }
 
-.z-index-top{
+.z-index-top {
     z-index: 999;
 }
 
@@ -86,7 +86,7 @@ a:hover {
     width: 95%;
 }
 
-.blue{
+.blue {
     color: #4CB1C8;
 }
 
@@ -116,11 +116,17 @@ a:hover {
 
 ::placeholder {
     color: #4CB1C8;
-    padding-left: 5%;    
-  }
+    padding-left: 5%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 .border-blue {
-    border-color:#4CB1C8 ;
+    border-color: #4CB1C8;
 }
 
 .btn-hover:hover {
@@ -148,6 +154,11 @@ a:hover {
 }
 
 .my-active {
+    color: #f6d554 !important;
+    border-bottom: 3px solid #f6d554;
+}
+
+.mobile-sidebar:hover {
     color: #f6d554 !important;
     border-bottom: 3px solid #f6d554;
 }
