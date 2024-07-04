@@ -13,6 +13,10 @@ a {
     /* display: block; */
 }
 
+.z-index-top{
+    z-index: 999;
+}
+
 a:hover {
     color: #000;
     cursor: pointer;
