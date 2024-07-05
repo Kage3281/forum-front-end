@@ -151,12 +151,12 @@ a:hover {
     color: #f6d554;
 }
 
-.noBorderRadiusEnd {
+.border-end-del {
     border-end-end-radius: unset;
     border-top-right-radius: unset;
 }
 
-.noBorderRadiusStat {
+.border-start-del {
     border-start-start-radius: unset;
     border-bottom-left-radius: unset;
 }
