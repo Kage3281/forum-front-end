@@ -82,6 +82,14 @@ a:hover {
     width: 80%;
 }
 
+.w-90 {
+    width: 90%;
+}
+
+.w-93 {
+    width: 93%;
+}
+
 .w-95 {
     width: 95%;
 }
@@ -151,6 +159,10 @@ a:hover {
 .noBorderRadiusStat {
     border-start-start-radius: unset;
     border-bottom-left-radius: unset;
+}
+
+.reset-input{
+    display: none;
 }
 
 .my-active {

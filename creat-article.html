@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
     <!-- 自訂style -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -119,6 +120,73 @@
       </div>
     </nav>
     <!-- 手機版 nav 這裡結束 -->
+
+    <!-- section 這裡開始 -->
+    <div class="container-fluid col-xl-6 col-lg-12 mb-5">
+      <div class="container card my-3 rounded-5 border-2 border-dark h-100 p-4">
+        <div class="row">
+          <a href="./article-list.html" class="d-flex flex-row-reverse">
+            <i class="bi bi-x-lg display-1"></i>
+          </a>
+
+          <select
+            style="width: 150px"
+            class="form-select rounded-pill ms-2"
+            id="inputGroupSelect01"
+          >
+            <option selected>選擇主題</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <div class="d-flex justify-content-center w-100">
+            <div class="w-100">
+              <label for="article-title" class="form-label mt-3 mb-0 ms-1"
+                >文章標題</label
+              >
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control rounded-pill"
+                  id="article-title"
+                />
+              </div>
+
+              <label for="article-content" class="form-label ms-1 mt-1 mb-0"
+                >文章內容</label
+              >
+              <div class="input-group mb-3">
+                <textarea
+                  style="height: 250px"
+                  id="article-content"
+                  class="form-control rounded-5"
+                  name=""
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <input
+            style="width: 240px"
+            type="file"
+            class="form-control rounded-pill ms-2 mt-2"
+            aria-label="Upload"
+          />
+
+          <label class="d-flex flex-row-reverse">
+            <button
+              style="width: 150px"
+              type="button"
+              class="btn btn-secondary btn-lg rounded-pill mt-5"
+            >
+              建立文章
+            </button>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- section 這裡結束 -->
 
     <!-- footer 這裡開始 -->
     <footer
