@@ -7,26 +7,21 @@ body {
     background-image: url(../pet_img/bg-img.png);
 }
 
-a {
+.AReset {
     text-decoration: none;
     color: #000;
-    /* display: block; */
 }
 
-.z-index-top {
-    z-index: 999;
-}
-
-a:hover {
+.AReset:hover {
     color: #000;
     cursor: pointer;
 }
 
-.fav-hover:hover {
+.FavHover:hover {
     color: #4CB1C8;
 }
 
-.del-hover:hover {
+.DelHover:hover {
     color: red;
 }
 
@@ -61,56 +56,35 @@ a:hover {
 /* slick css 這裡結束 */
 
 
-.rounded-5 {
+.Rounded5 {
     border-radius: 15px;
 }
 
-.h-70 {
+.H70 {
     height: 70%;
 }
 
-.w-10 {
+.W10 {
     width: 245px;
 }
 
-.w-20 {
-    width: 20%;
-}
-
-
-.w-80 {
+.W80 {
     width: 80%;
 }
 
-.w-90 {
-    width: 90%;
-}
-
-.w-93 {
-    width: 93%;
-}
-
-.w-95 {
-    width: 95%;
-}
-
-.blue {
-    color: #4CB1C8;
-}
-
-.orange-yellow {
+.OrangeYellow {
     color: #F69A30;
 }
 
-.light-gray {
+.LightGray {
     color: #C8C8C8;
 }
 
-.hover:hover {
+.Hover:hover {
     color: #F4BC7A;
 }
 
-.border-coffee {
+.BorderCoffee {
     border-color: #6a513d;
 }
 
@@ -125,48 +99,48 @@ a:hover {
     overflow-y: hidden;
 }
 
-.border-blue {
+.BorderBlue {
     border-color: #4CB1C8;
 }
 
-.btn-hover:hover {
+.BtnHover:hover {
     background-color: #f6d554;
     border: 1px solid #f6d554;
 }
 
-.go-top-btn {
+.GoTopBtn {
     text-decoration: none;
     color: #f69a30;
 }
 
-.go-top-btn:hover {
+.GoTopBtn:hover {
     color: #f6d554;
 }
 
-.border-end-del {
+.BorderEndDel {
     border-end-end-radius: unset;
     border-top-right-radius: unset;
 }
 
-.border-start-del {
+.BorderStartDel {
     border-start-start-radius: unset;
     border-bottom-left-radius: unset;
 }
 
-.my-active {
+.MyActive {
     color: #f6d554 !important;
     border-bottom: 3px solid #f6d554;
 }
 
-.mobile-sidebar:hover {
+.MobileSidebar:hover {
     color: #f6d554 !important;
     border-bottom: 3px solid #f6d554;
 }
 
-.display-change {
+.DisplayChange {
     display: none;
 }
 
-.display-change.active {
+.DisplayChange.active {
     display: block;
 }
