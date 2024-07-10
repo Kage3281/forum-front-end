@@ -93,7 +93,7 @@ body {
     padding-left: 5%;
 }
 
-::-webkit-scrollbar {
+.HideScrollBar::-webkit-scrollbar {
     display: none;
     overflow-x: hidden;
     overflow-y: hidden;
